@@ -1,0 +1,36 @@
+body {
+  /* Set line height to 1.5 times the font size
+	   and use the OS’s UI font as the website font
+	 */
+  font: 100%/1.5 system-ui;
+  margin: 2rem;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+img {
+  display: block;
+  margin-top: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+textarea {
+  min-height: 8rem;
+  min-width: 18rem;
+}
