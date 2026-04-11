@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="../style.css">
     <title>Resume</title>
 </head>
-<body>
+<body class="resume-page">
     <nav aria-label="Main navigation">
         <a href="../index.html">Home</a>
         <a href="../projects/index.html">Projects</a>
         <a href="../contact/index.html">Contact</a>
-        <a href="./index.html">Resume</a>
+        <a class="current" href="./index.html">Resume</a>
         <a href="https://github.com/nnero-sd" target="_blank" rel="noreferrer">GitHub Profile</a>
     </nav>
     <h1>Resume</h1>
+    <p class="resume-intro">An overview of my education, skills, and recent work as I build experience in web development.</p>
 
-    <section aria-labelledby="education-heading">
+    <section class="resume-section" aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>
         <article>
             <header>
@@ -27,7 +28,7 @@
         </article>
     </section>
 
-    <section aria-labelledby="skills-heading">
+    <section class="resume-section" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Skills</h2>
         <ul>
             <li>HTML</li>
@@ -37,7 +38,7 @@
         </ul>
     </section>
 
-    <section aria-labelledby="experience-heading">
+    <section class="resume-section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>
         <article>
             <header>
@@ -45,6 +46,17 @@
                 <p><time datetime="2026-04">April 2026</time></p>
             </header>
             <p>Designed and built a personal website with multiple pages, navigation, and a contact form.</p>
+        </article>
+    </section>
+
+    <section class="resume-section" aria-labelledby="activities-heading">
+        <h2 id="activities-heading">Activities</h2>
+        <article>
+            <header>
+                <h3>Independent Frontend Practice</h3>
+                <p><time datetime="2026">2026</time> to Present</p>
+            </header>
+            <p>Practicing layout, responsive design, and semantic HTML by building small personal web projects and class assignments.</p>
         </article>
     </section>
 </body>

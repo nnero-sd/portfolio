@@ -1,27 +1,87 @@
+:root {
+  --color-accent: oklch(65% 50% 0);
+  --color-border: oklch(50% 10% 200 / 40%);
+  --color-text: oklch(25% 10% 240);
+  --color-muted: oklch(35% 6% 240);
+  --color-surface: oklch(98% 0.01 95);
+}
+
 body {
-  /* Set line height to 1.5 times the font size
-	   and use the OS’s UI font as the website font
-	 */
   font: 100%/1.5 system-ui;
-  margin: 2rem;
+  color: var(--color-text);
+  max-width: 100ch;
+  margin-inline: auto;
+  padding: 1rem;
 }
 
 nav {
+  display: flex;
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
 }
 
 nav a {
-  margin-right: 1rem;
+  flex: 1;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  color: var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+nav a.current {
+  border-bottom: 0.4em solid var(--color-border);
+  padding-bottom: 0.1em;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin-top: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 form label {
-  display: block;
-  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 1rem;
+}
+
+form button {
+  grid-column: 1 / -1;
 }
 
 input,
@@ -30,7 +90,77 @@ button {
   font: inherit;
 }
 
+input,
+textarea,
+button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
 textarea {
   min-height: 8rem;
-  min-width: 18rem;
+  resize: vertical;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.projects article img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.resume-page {
+  max-width: 80ch;
+}
+
+.resume-intro {
+  margin-bottom: 2rem;
+  color: var(--color-muted);
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-section article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.resume-section article p {
+  margin-top: 0.5rem;
+}
+
+.resume-section ul {
+  padding-left: 1.25rem;
+}
+
+.resume-section time {
+  color: var(--color-muted);
+  font-weight: 600;
 }
