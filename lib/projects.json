@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Portfolio Website",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A multi-page personal website built with HTML and CSS to showcase navigation, page structure, and basic styling techniques."
+  },
+  {
+    "title": "Landing Page Mockup",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A responsive layout exercise focused on hierarchy, spacing, and clean section structure across different screen sizes."
+  },
+  {
+    "title": "Contact Form Exercise",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A form project exploring semantic labels, accessible inputs, and practical layout patterns for contact information."
+  },
+  {
+    "title": "Resume Page",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A structured resume built with sections, articles, lists, and time elements to create meaningful HTML content."
+  },
+  {
+    "title": "Navigation Styling",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A styling exercise using Flexbox to create a consistent navigation bar with hover states and a current page marker."
+  },
+  {
+    "title": "Grid Practice",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A CSS Grid experiment that arranges project cards into a responsive multi-column layout that adapts to viewport width."
+  },
+  {
+    "title": "Typography Study",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A study in readable typography using line height, content width, and heading sizes to improve scanning and balance."
+  },
+  {
+    "title": "Semantic HTML Notes",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An HTML practice page focused on using headings, paragraphs, articles, sections, and lists in a more meaningful way."
+  },
+  {
+    "title": "Accessibility Pass",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A review of alt text, clear labels, and navigation cues to make the site easier to understand and use."
+  },
+  {
+    "title": "Visual Hierarchy Test",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An experiment in contrast and spacing to make headings, cards, and supporting text feel more organized on the page."
+  },
+  {
+    "title": "Responsive Layout Drill",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A responsive design drill testing how navigation, cards, and form controls behave across narrow and wide screens."
+  },
+  {
+    "title": "CSS Practice Sandbox",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A sandbox page for experimenting with layout properties, borders, padding, alignment, and reusable page styles."
+  }
+]

@@ -140,6 +140,25 @@ button {
   object-fit: cover;
 }
 
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: bold;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  font-size: 2rem;
+  margin: 0;
+}
+
 .resume-page {
   max-width: 80ch;
 }
