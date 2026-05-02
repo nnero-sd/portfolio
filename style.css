@@ -140,6 +140,73 @@ button {
   object-fit: cover;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  flex: 1;
+  list-style: none;
+  padding: 1em;
+  margin: 0;
+  border: 1px solid var(--color-border);
+  gap: 0.5em;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
+
+.project-year {
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.project-year::before {
+  content: 'c. ';
+}
+
 #profile-stats dl {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
