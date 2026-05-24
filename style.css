@@ -180,6 +180,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -319,6 +323,74 @@ path {
   grid-row: 2;
   font-size: 2rem;
   margin: 0;
+}
+
+/* Scrollytelling layout */
+#scrolly-1 {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+#scatter-story {
+  flex: 1;
+  min-width: 0;
+}
+
+#scatter-story .step {
+  padding: 1rem;
+  margin-bottom: 60vh;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+#scatter-story .step:last-child {
+  margin-bottom: 0;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+/* File unit visualization */
+#files {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
+  margin-block: 2rem;
+}
+
+#files > div {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+#files dt {
+  font-size: 0.8em;
+  color: var(--color-muted);
+  word-break: break-all;
+}
+
+#files dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.1em;
+  margin: 0;
+}
+
+.loc {
+  display: inline-block;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background-color: var(--color);
+  border-radius: 50%;
 }
 
 .resume-page {

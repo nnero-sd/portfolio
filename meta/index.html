@@ -31,8 +31,18 @@
     </dl>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
-    <p id="selection-count">No commits selected</p>
+
+    <div id="scrolly-1">
+      <div id="scatter-story">
+        <!-- commit story steps injected by JS -->
+      </div>
+      <div id="scatter-plot">
+        <div id="chart"></div>
+        <p id="selection-count">No commits selected</p>
+        <dl id="files"></dl>
+      </div>
+    </div>
+
     <dl id="language-breakdown" class="stats"></dl>
 
     <script type="module" src="main.js"></script>
